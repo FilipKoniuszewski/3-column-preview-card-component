@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+:root {
+    --primary-bright-orange: hsl(31, 77%, 52%);
+    --primary-dark-cyan: hsl(184, 100%, 22%);
+    --primary-very-dark-cyan: hsl(179, 100%, 13%);
+
+    --neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --neutral-very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+}
+
+article.sedan {
+    background: var(--primary-bright-orange);
+    padding: 2.5rem 3rem 2.2rem 3rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+article.suv {
+    background: var(--primary-dark-cyan);
+    padding: 2.5rem 3rem 2.2rem 3rem;
+}
+article.luxury {
+    background: var(--primary-very-dark-cyan);
+    padding: 2.5rem 3rem 2.2rem 3rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+h2{
+    color: var(--neutral-very-light-gray);
+    font-family: 'Big Shoulders Display', 'sans-serif';
+    margin-bottom: 1.5rem;
+    font-size: 2.4rem;
+}
+button {
+    font-family: 'Lexend Deca', 'sans-serif';
+    margin-top: 2.5rem;
+    background: var(--neutral-very-light-gray);
+    border: 0;
+    padding: 0.8rem 2rem 0.8rem 2.3rem;
+    border-radius: 2.3rem;
+    transition: 0.3s;
+    margin-bottom: 1rem;
+}
+button:hover {
+    position: absolute;
+    border: var(--neutral-very-light-gray) 1px solid;
+    color: var(--neutral-very-light-gray);
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+.button-1 {
+    color: var(--primary-bright-orange);
+}
+.button-2 {
+    color: var(--primary-dark-cyan);
+}
+.button-3 {
+    color: var(--primary-very-dark-cyan);
+}
+button:active {
+    transform: scale(0.9);
+}
+
+p {
+    font-family: 'Lexend Deca', 'sans-serif';
+    color: var(--neutral-transparent-white);
+    max-width: 200px;
+    margin-bottom: 3.2rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.attribution {
+    font-size: 13px; text-align: center;
+    justify-content: end;
+
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
